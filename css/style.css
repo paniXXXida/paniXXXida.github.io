@@ -226,9 +226,7 @@ input[type="email"] {
 
 /*Tablet*/
 @media only screen and (min-width: 481px) and (max-width: 1279px) {
-  .Hamburgernavigation {
-    order: 2;
-  }
+  
   .Hamburgernavigation label {
     display: none;
   }
@@ -404,7 +402,7 @@ input[type="email"] {
     width: 70%;
     float: left;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #a36868;
   }
 
   .Contact_form input[type="text"],
@@ -441,14 +439,9 @@ input[type="email"] {
     margin-bottom: 100px;
   }
 
-  .Homepage_body header {
-    order: 1;
-  }
   .Hamburgernavigation {
-    order: 2;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+    bottom: 500px;
+    left: 500px;
   }
   .Hamburgerlist {
     position: absolute;
@@ -472,6 +465,7 @@ input[type="email"] {
     padding: 10px;
   }
   .Hamburgerlist {
+    order: 2;
     display: none;
   }
   .Hamburgernavigation input:checked ~ .Hamburgerlist {
@@ -493,9 +487,11 @@ input[type="email"] {
   .Homepage_aside li {
     margin-top: 10px;
   }
-  .homevideo {
+
+  .movie {
     display: none;
   }
+  
   .logo {
     display: none;
   }
@@ -690,91 +686,8 @@ input[type="email"] {
     display: none;
   }
 
-  .Homepage_body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .Homepage_section footer a:hover {
-    color: #008000;
-  }
-
-  .Homepage_section footer a:active {
-    color: #fa77fa;
-  }
-
-  .Contact_body h3 {
-    font-family: "Notable", sans-serif;
-  }
-
-  .Homepage_body h1 {
-    color: #461313;
-  }
-
-  .Homepage_body h2 {
-    color: #d481d4;
-  }
-
-  .Homesection h3 {
-    color: #68ee68;
-  }
-  .Homepage_aside h2 {
-    color: #00688b;
-  }
-
-  .Homepage footer p {
-    color: #ffa60091;
-  }
-
-  .Product-articles h2 {
-    color: #691d69;
-  }
-
-  .Pricing_table table {
-    background-color: black;
-  }
-
-  .Pricing_table table,
-  th,
-  td {
-    border: solid #333;
-    border-color: #00688b;
-    border-collapse: collapse;
-    border-style: double;
-    border-width: 3px;
-  }
-
-  .Pricing_table table td:first-child {
-    color: #ff0;
-  }
-
-  .Pricing_table table tr:nth-child(even) {
-    color: #cff;
-  }
-
-  .Pricing_table table tr:nth-child(odd) {
-    color: #fff;
-  }
-
-  .Pricing_body h3 {
-    font-family: "Notable", sans-serif;
-    color: #42aeb2;
-    letter-spacing: 1rem;
-    line-height: 2rem;
-    text-indent: 50px;
-    text-transform: uppercase;
-  }
-
-  .Pricing_body h3::first-letter {
-    color: #ff0000;
-  }
-
   .Pricing_body p {
     word-spacing: 1em;
-  }
-
-  .logo {
-    width: 80px;
-    height: 80px;
   }
 
   .cookieStatement {
