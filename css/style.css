@@ -2,6 +2,34 @@
 * {
   box-sizing: border-box;
 }
+
+
+/* #hamburger-toggle {
+	display: none;
+} */
+
+.Hamburgernavigation {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+}
+
+.hamburger-line {
+	display: flex;
+	width: 40px;
+	height: 4px;
+	background-color: #777;
+	margin-bottom: 5px;
+}
+
+#hamburger-toggle:checked + .Hamburgernavigation {
+	display: block;
+}
+
+
+
 .Homepage_body,
 .Pricing_body,
 .Contact_body {
