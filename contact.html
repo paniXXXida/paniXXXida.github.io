@@ -10,6 +10,11 @@
     <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon" />
   </head>
 
+  <!-- INDENT USING TABS VSCODE HTML & CSS -->
+
+  <!-- <tag></tag> -->
+  <!-- <tag /> -->
+
   <body class="Product_body">
     <header>
       <img class="logo" src="img/sport-logo.jpg" />
@@ -17,16 +22,18 @@
       <h2>All the contemporary sport things in one place</h2>
     </header>
 
+    <label id="Hamburgerlabel" for="Hamburgertoggle">Menu</label>
+    <input id="Hamburgertoggle" type="checkbox" />
+
     <nav class="Hamburgernavigation">
-      <label for="Hamburger">&#9776;</label>
-      <input type="checkbox" id="Hamburger" />
-      <section class="Hamburgerlist">
-        <ul>
-          <li><a href="index.html"> Home </a></li>
-          <li><a href="product.html"> Products </a></li>
-          <li><a href="pricing.html"> Pricing </a></li>
-        </ul>
-      </section>
+      <ul class="Hamburgerlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="boxer.html">Boxer Bot</a></li>
+        <li><a href="blog.html">Our Blog</a></li>
+      </ul>
     </nav>
 
     <section class="Contact_info">
@@ -49,9 +56,9 @@
           <input type="email" value="@" id="email" name="email" />
 
           <label for="message">Enter your message:</label>
-          <input type="Text" id="Message" name="Message" />
+          <input type="text" id="Message" name="Message" />
 
-          <input type="Submit" value="Submit" />
+          <input type="submit" />
         </fieldset>
       </form>
     </section>
@@ -59,37 +66,28 @@
     <aside class="Contact_aside">
       <figure class="Contact_figure1">
         <a href="https://www.inholland.nl">
-          <img src="img/mask.png" title="cooling mask" alt="Mask product"
-        /></a>
-        <figcaption>
-          The subject to &copy; copyright. Source: moreinspiration.com
-        </figcaption>
+          <img src="img/mask.png" title="cooling mask" alt="Mask product" />
+        </a>
+        <figcaption>The subject to &copy; copyright. Source: moreinspiration.com</figcaption>
       </figure>
 
       <figure class="Contact_figure2">
         <a href="https://www.inholland.nl">
-          <img src="img/pants.png" title="pants" alt="Sport healthcare"
-        /></a>
-        <figcaption>
-          The subject to &copy; copyright. Source: moreinspiration.com
-        </figcaption>
+          <img src="img/pants.png" title="pants" alt="Sport healthcare" />
+        </a>
+        <figcaption>The subject to &copy; copyright. Source: moreinspiration.com</figcaption>
       </figure>
 
       <figure class="Contact_figure3">
         <a href="https://www.inholland.nl">
-          <img
-            src="img/Powerbreather.jpeg"
-            title="Powerbreather"
-            alt="Professional equipment"
-        /></a>
-        <figcaption>
-          The subject to &copy; copyright. Source: moreinspiration.com
-        </figcaption>
+          <img src="img/Powerbreather.jpeg" title="Powerbreather" alt="Professional equipment" />
+        </a>
+        <figcaption>The subject to &copy; copyright. Source: moreinspiration.com</figcaption>
       </figure>
     </aside>
+
+    <section class="cookieStatement">Cookie statement</section>
+
+    <footer class="Contact_footer">&copy;2022 Rienat Zhuravlov.</footer>
   </body>
-
-  <section class="cookieStatement">Cookie statement</section>
-
-  <footer class="Contact_footer">&copy;2022 Rienat Zhuravlov.</footer>
 </html>

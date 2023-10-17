@@ -3,32 +3,109 @@
   box-sizing: border-box;
 }
 
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap"); */
 
-/* #hamburger-toggle {
-	display: none;
+/* 
+
+section > h2 (direct child)
+
+<section>
+  <h2>
+  </h2>
+</section>
+
+*/
+
+/* .clearfix3 {
+  width: 300px;
+  height: 300px;
+  float: right;
 } */
 
+body {
+  /* DO NOT USE Notable here */
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+}
+/* 
+.pricing-page td:first-child {
+	color: #ff0;
+}
+
+.pricing-page tr:nth-child(2n) {
+	background-color: #cff;
+}
+
+.pricing-page tr:nth-child(2n + 1) {
+	background-color: #fff;
+} */
+
+/* 
+::first-letter {
+	font-size: 28px;
+}
+
+*/
+
+/* 
+border-color: white;
+border-style: double; check if works single line -- doulble lile =====
+border-width: 1px;
+*/
+a:hover {
+  /* KEEP OR NOT */
+  background-color: green;
+  color: blue;
+}
+
+a:active {
+}
+
+.clearfix1 p, .clearfix2 p, .clearfix3 p {
+  border: 3px;
+  border-radius: 5px;
+}
+
+/* a:(...) ... */
+
+a:visited {
+}
+
+p {
+  /* Notable */
+}
+
+#Hamburgertoggle {
+  display: none;
+}
+
+#Hamburgerlabel {
+  display: block;
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: lightblue;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
 .Hamburgernavigation {
-	display: none;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	z-index: 10;
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  z-index: 10;
+  width: 200px;
+  background-color: white;
 }
 
-.hamburger-line {
-	display: block;
-	width: 40px;
-	height: 4px;
-	background-color: #777;
-	margin-bottom: 5px;
+#Hamburgertoggle:checked + .Hamburgernavigation {
+  display: block;
 }
-
-#hamburger-toggle:checked + .Hamburgernavigation {
-	display: block;
-}
-
-
 
 .Homepage_body,
 .Pricing_body,
@@ -129,7 +206,7 @@ input[type="email"] {
 .Pricing_aside {
   width: 20%;
   position: absolute;
-  top: 430px;
+  top: 330px;
   right: 80px;
   border: 2px solid black;
 }
@@ -140,6 +217,23 @@ input[type="email"] {
   flex-direction: column;
   border: 2px solid black;
   display: flex;
+}
+
+#Product_articles {
+  display: grid;
+  grid-gap: 15px;
+  margin: 40px;
+  grid-template-rows: auto;
+  grid-template-columns: 40% 35% auto;
+}
+
+.Product_article1,
+.Product_article2,
+.Product_article3,
+.Product_article4,
+.Product_article5,
+.Product_article6 {
+  border: 2px solid black;
 }
 
 /*PC*/
@@ -174,16 +268,11 @@ input[type="email"] {
     border: 2px solid black;
   }
   #Product_articles {
-    display: grid;
     grid-template-areas:
       "Product_article2 Product_article1 Product_article3"
       "Product_article5 Product_article1 Product_article3"
       "Product_article5 Product_article1 Product_article4"
       "Product_article5 Product_article6 Product_article6";
-    grid-gap: 15px;
-    margin: 40px;
-    grid-template-rows: auto;
-    grid-template-columns: 40% 35% auto;
   }
   .Product_article1 {
     grid-area: Product_article1;
@@ -237,9 +326,7 @@ input[type="email"] {
   .Homepage_aside li {
     margin-top: 25px;
   }
-  article {
-    border: 2px solid black;
-  }
+
   .Pricing_Table {
     width: 75%;
     float: left;
@@ -325,13 +412,9 @@ input[type="email"] {
     width: 180px;
   }
 
-  .Product_articles {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
+  #Product_articles {
+    grid-template-columns: 50% 50%;
+
     grid-template-areas:
       "Product_article1 ."
       ". ."
@@ -458,6 +541,10 @@ input[type="email"] {
   }
 }
 
+.Contact_figure1 img, .Contact_figure2 img, .Contact_figure3 img {
+  width: 100%;
+}
+
 /*Mobile*/
 @media only screen and (max-width: 480px) {
   .Homepage_body {
@@ -466,43 +553,19 @@ input[type="email"] {
     margin-bottom: 100px;
   }
 
-  .Hamburgernavigation {
-    bottom: 500px;
-    left: 500px;
-  }
-  .Hamburgerlist {
-    position: absolute;
-    top: 3rem;
-    right: 0rem;
-    background-color: #fff;
-  }
-  .Hamburgerlist a {
-    box-sizing: border-box;
-    display: block;
+  .Pricing_aside {
+    position: unset;
     width: 100%;
-    border: 2px solid #333;
   }
 
-  .Hamburgernavigation label {
-    display: inline-block;
-    color: white;
-    background: #a02620;
-    font-style: normal;
-    font-size: 2em;
-    padding: 10px;
-  }
-  .Hamburgerlist {
-    order: 2;
-    display: none;
-  }
-  .Hamburgernavigation input:checked ~ .Hamburgerlist {
-    display: block;
+  .Contact_aside {
+    width: 100%;
   }
 
   .Homepage_aside {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 100px;
+    width: 200px;
     float: left;
     order: 3;
     border: 2px solid black;
@@ -622,26 +685,14 @@ input[type="email"] {
   .Product_body {
     margin-bottom: 100px;
   }
-  .Product_articles {
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-auto-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
+  #Product_articles {
+    grid-template-columns: 100%;
+
     grid-template-areas:
-      ". ."
-      "Product_article5 ."
-      ". ."
-      ". ."
-      "Product_article3 ."
-      ". ."
-      ". ."
-      "Product_article2 ."
-      ". ."
-      ". ."
-      "Product_article1 ."
-      ". .";
+      "Product_article5"
+      "Product_article3"
+      "Product_article2"
+      "Product_article1";
   }
 
   .Product_article5 {
@@ -714,6 +765,8 @@ input[type="email"] {
   }
 
   .Pricing_body p {
+    /* text-transform: uppercase; somewhere else */
+    /* line-height, text-indent, letter-spacing or in body */
     word-spacing: 1em;
   }
 
