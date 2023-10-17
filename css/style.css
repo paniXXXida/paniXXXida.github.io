@@ -17,7 +17,7 @@
 }
 
 .hamburger-line {
-	display: flex;
+	display: block;
 	width: 40px;
 	height: 4px;
 	background-color: #777;
