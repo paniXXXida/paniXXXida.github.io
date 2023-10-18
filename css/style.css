@@ -61,7 +61,9 @@ a:hover {
 a:active {
 }
 
-.clearfix1 p, .clearfix2 p, .clearfix3 p {
+.clearfix1 p,
+.clearfix2 p,
+.clearfix3 p {
   border: 3px;
   border-radius: 5px;
 }
@@ -541,7 +543,9 @@ input[type="email"] {
   }
 }
 
-.Contact_figure1 img, .Contact_figure2 img, .Contact_figure3 img {
+.Contact_figure1 img,
+.Contact_figure2 img,
+.Contact_figure3 img {
   width: 100%;
 }
 
