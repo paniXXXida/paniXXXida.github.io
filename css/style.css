@@ -14,6 +14,9 @@ section > h2 (direct child)
   </h2>
 </section>
 
+
+
+
 */
 
 /* .clearfix3 {
@@ -21,6 +24,10 @@ section > h2 (direct child)
   height: 300px;
   float: right;
 } */
+
+.logo {
+  margin: 0 auto;
+}
 
 body {
   /* DO NOT USE Notable here */
@@ -111,7 +118,8 @@ p {
 
 .Homepage_body,
 .Pricing_body,
-.Contact_body {
+.Contact_body,
+.Blog_body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -149,7 +157,7 @@ input[type="email"] {
   text-align: left;
 }
 .movie {
-  width: 1000px;
+  width: 800px;
   height: 400px;
   display: flex;
   flex: 100%;
@@ -254,6 +262,56 @@ input[type="email"] {
     width: 300px;
   }
 
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .Boxer_h2 {
+    margin-left: 0;
+  }
+  .Boxer_heading {
+    text-align: center;
+  }
+
+  .boxer_photo {
+    order: 2;
+    margin-left: 350px;
+  }
+
+  .Boxer_aside1 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: absolute;
+    top: 400px;
+    border: 2px solid black;
+    width: 250px;
+    display: grid;
+    float: left;
+  }
+
+  .Boxer_body p {
+    font-size: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    flex-direction: column;
+    border: 2px solid black;
+    border-style: double;
+  }
+
+  .Homepage_body video {
+    margin: 0 auto;
+  }
+
   .Product_figure2 {
     grid-area: Product_figure2;
     width: 300px;
@@ -319,9 +377,10 @@ input[type="email"] {
   .Homepage_aside {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 200px;
+    float: left;
+    width: 180px;
     position: absolute;
-    top: 998px;
+    top: 850px;
     right: 2rem;
     border: 2px solid black;
   }
@@ -364,7 +423,7 @@ input[type="email"] {
     order: 4;
   }
   .Homepage_aside {
-    width: 23%;
+    width: 15%;
     float: left;
     order: 3;
   }
@@ -569,10 +628,11 @@ input[type="email"] {
   .Homepage_aside {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 200px;
+    width: 150px;
     float: left;
     order: 3;
     border: 2px solid black;
+    border-style: double;
   }
   #Hamburger {
     display: none;
