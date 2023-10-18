@@ -30,14 +30,14 @@ section > h2 (direct child)
 }
 
 body {
-  /* DO NOT USE Notable here */
+ 
   font-family: Arial, Helvetica, sans-serif;
   /* font-family: "Roboto", sans-serif; */
 }
-/* 
-.pricing-page td:first-child {
+
+/* .pricing-page td:first-child {
 	color: #ff0;
-}
+} 
 
 .pricing-page tr:nth-child(2n) {
 	background-color: #cff;
@@ -45,7 +45,7 @@ body {
 
 .pricing-page tr:nth-child(2n + 1) {
 	background-color: #fff;
-} */
+} */ 
 
 /* 
 ::first-letter {
@@ -60,9 +60,8 @@ border-style: double; check if works single line -- doulble lile =====
 border-width: 1px;
 */
 a:hover {
-  /* KEEP OR NOT */
-  background-color: green;
-  color: blue;
+
+  color: #008000;
 }
 
 a:active {
@@ -75,13 +74,18 @@ a:active {
   border-radius: 5px;
 }
 
-/* a:(...) ... */
+.Blog_article {
+  display: block;
+  border: 3px #fabbfa;
+}
+
+
 
 a:visited {
 }
 
 p {
-  /* Notable */
+  font-family: Notable;
 }
 
 #Hamburgertoggle {
@@ -92,8 +96,8 @@ p {
   display: block;
   width: 150px;
   text-align: center;
-  border: 1px solid black;
-  background-color: lightblue;
+  border: 1px solid #00008b;
+  background-color: #ADD8E6;
   font-size: 24px;
   font-weight: bold;
   position: fixed;
@@ -109,7 +113,7 @@ p {
   right: 10px;
   z-index: 10;
   width: 200px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 #Hamburgertoggle:checked + .Hamburgernavigation {
@@ -243,7 +247,7 @@ input[type="email"] {
 .Product_article4,
 .Product_article5,
 .Product_article6 {
-  border: 2px solid black;
+  border: 2px solid #FFFF00;
 }
 
 /*PC*/
@@ -283,6 +287,7 @@ input[type="email"] {
   }
 
   .boxer_photo {
+    width:500 px;
     order: 2;
     margin-left: 350px;
   }
@@ -325,7 +330,7 @@ input[type="email"] {
     width: 25%;
     top: 600px;
     right: 350px;
-    border: 2px solid black;
+    border: 2px solid #ff0000;
   }
   #Product_articles {
     grid-template-areas:
