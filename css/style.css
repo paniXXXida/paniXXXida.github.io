@@ -74,12 +74,6 @@ a:active {
   border-radius: 5px;
 }
 
-.Blog_article {
-  display: block;
-  border: 3px #fabbfa;
-}
-
-
 
 a:visited {
 }
@@ -220,7 +214,7 @@ input[type="email"] {
 .Pricing_aside {
   width: 20%;
   position: absolute;
-  top: 330px;
+  top: 322px;
   right: 80px;
   border: 2px solid black;
 }
@@ -386,7 +380,7 @@ input[type="email"] {
     width: 180px;
     position: absolute;
     top: 850px;
-    right: 2rem;
+    right: 3rem;
     border: 2px solid black;
   }
   .Homepage_aside li {
