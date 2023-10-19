@@ -30,7 +30,6 @@ section > h2 (direct child)
 }
 
 body {
- 
   font-family: Arial, Helvetica, sans-serif;
   /* font-family: "Roboto", sans-serif; */
 }
@@ -45,7 +44,7 @@ body {
 
 .pricing-page tr:nth-child(2n + 1) {
 	background-color: #fff;
-} */ 
+} */
 
 /* 
 ::first-letter {
@@ -60,7 +59,6 @@ border-style: double; check if works single line -- doulble lile =====
 border-width: 1px;
 */
 a:hover {
-
   color: #008000;
 }
 
@@ -73,7 +71,6 @@ a:active {
   border: 3px;
   border-radius: 5px;
 }
-
 
 a:visited {
 }
@@ -91,7 +88,7 @@ p {
   width: 150px;
   text-align: center;
   border: 1px solid #00008b;
-  background-color: #ADD8E6;
+  background-color: #add8e6;
   font-size: 24px;
   font-weight: bold;
   position: fixed;
@@ -107,7 +104,7 @@ p {
   right: 10px;
   z-index: 10;
   width: 200px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #Hamburgertoggle:checked + .Hamburgernavigation {
@@ -158,6 +155,7 @@ input[type="email"] {
   width: 800px;
   height: 400px;
   display: flex;
+  position: relative;
   flex: 100%;
   flex-direction: column;
 }
@@ -241,7 +239,7 @@ input[type="email"] {
 .Product_article4,
 .Product_article5,
 .Product_article6 {
-  border: 2px solid #FFFF00;
+  border: 2px solid #ffff00;
 }
 
 /*PC*/
@@ -265,6 +263,15 @@ input[type="email"] {
     margin: 0 auto;
   }
 
+  .Blog_article h1 {
+    text-align: center;
+  }
+
+
+  .Blog_body article {
+    border: 3px solid black;
+  }
+
   h1 {
     text-align: center;
   }
@@ -281,7 +288,7 @@ input[type="email"] {
   }
 
   .boxer_photo {
-    width:500 px;
+    width: 500 px;
     order: 2;
     margin-left: 350px;
   }
@@ -298,7 +305,7 @@ input[type="email"] {
   }
 
   .Boxer_body p {
-    font-size: 25px;
+    font-size: 15px;
     max-width: 900px;
     margin: 0 auto;
     display: grid;
