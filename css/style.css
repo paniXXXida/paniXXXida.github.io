@@ -65,6 +65,32 @@ a:hover {
 a:active {
 }
 
+.News_article img {
+  width: 200px;
+  height: 95px;
+  float: right;
+  margin-top: -60px;
+}
+
+
+.News_article p {
+  flex-direction: column;
+  text-align: left;
+}
+
+.News_article {
+  background-image: url(/img/background.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  
+  background-position: center;
+}
+
+.News_article {
+  display: block;
+  margin: 0 auto;
+}
+
 
 .clearfix1 p,
 .clearfix2 p,
@@ -286,8 +312,10 @@ h2 {
   }
 
   .boxer_photo {
-    order: 2;
-    margin-left: 350px;
+    width: 650px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .Boxer_aside1 {
@@ -411,6 +439,13 @@ h2 {
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
+  }
+
+  .boxer_photo {
+    width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .Hamburgernavigation label {
@@ -622,6 +657,13 @@ h2 {
   
   .Hamburgerlist {
     display: block;
+  }
+
+  .boxer_photo {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
   
   
