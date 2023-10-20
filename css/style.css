@@ -34,24 +34,24 @@ body {
   /* font-family: "Roboto", sans-serif; */
 }
 
-/* .pricing-page td:first-child {
-	color: #ff0;
-} 
-
-.pricing-page tr:nth-child(2n) {
-	background-color: #cff;
+.Pricing_body tr td:first-child {
+  background-color: #FF0;
 }
 
-.pricing-page tr:nth-child(2n + 1) {
-	background-color: #fff;
-} */
+/* Apply background colors to alternating rows */
+.Pricing_body tr:nth-child(even) {
+  background-color: #CFF;
+}
 
-/* 
-::first-letter {
+.Pricing_body tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+
+p::first-letter {
 	font-size: 28px;
 }
 
-*/
 
 /* 
 border-color: white;
@@ -63,6 +63,15 @@ a:hover {
 }
 
 a:active {
+  color: red;
+}
+
+.Product_body article + article {
+  background-color: #008000;
+}
+
+ul > li {
+  font-weight: bold;
 }
 
 .News_article img {
@@ -80,6 +89,7 @@ a:active {
 }
 
 .News_article {
+  line-height: 10px;
   background-image: url(/img/background11.jpg);
   background-size: cover; 
   background-repeat: no-repeat;
@@ -211,6 +221,7 @@ input[type="email"] {
 } 
 
 h1 {
+  word-spacing: 5px;
   font-family: Notable;
   text-align: center;
 }
@@ -243,6 +254,7 @@ h2 {
   width: 10%;
 }
 .Pricing_Table {
+  text-transform: uppercase;
   padding: 3px;
   width: 75%;
   float: left;
