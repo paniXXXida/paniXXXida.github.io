@@ -74,16 +74,22 @@ a:active {
 
 
 .News_article p {
+  font-size: 15px;
   flex-direction: column;
   text-align: left;
 }
 
 .News_article {
-  background-image: url(/img/background.jpg);
+  background-image: url(/img/background11.jpg);
   background-size: cover; 
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
   background-position: center;
+}
+
+.News_article h2 {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .News_article {
