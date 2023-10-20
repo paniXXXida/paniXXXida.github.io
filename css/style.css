@@ -24,6 +24,19 @@ body {
   background-color: #FFF;
 }
 
+.News_aside {
+  flex-grow: 0;
+  flex-shrink: 0;
+  float: right;
+  width: 145px;
+  height: auto;
+  position: absolute;
+  top: 220px;
+  margin-top: 150px;
+  margin-left: 1750px;
+  border: 2px solid black;
+}
+
 
 p::first-letter {
 	font-size: 28px;
@@ -66,6 +79,7 @@ ul > li {
 }
 
 .News_article {
+  max-width: 1600px;
   background-image: url(/img/background11.jpg);
   background-size: cover; 
   background-repeat: no-repeat;
@@ -286,18 +300,13 @@ h2 {
     width: 300px;
   }
 
-
-  
   .News_article h1 {
     text-align: center;
   }
 
-
   .News_body article {
     border: 3px solid black;
   }
-
-  
 
   .Boxer_h2 {
     margin-left: 0;
@@ -409,7 +418,7 @@ h2 {
     height: 100%;
     position: absolute;
     top: 850px;
-    right: 3rem;
+    right: 18rem;
     border: 2px solid black;
   }
   .Homepage_aside li {
