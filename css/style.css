@@ -3,35 +3,12 @@
   box-sizing: border-box;
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap"); */
-
-/* 
-
-section > h2 (direct child)
-
-<section>
-  <h2>
-  </h2>
-</section>
-
-
-
-
-*/
-
-/* .clearfix3 {
-  width: 300px;
-  height: 300px;
-  float: right;
-} */
-
 .logo {
   margin: 0 auto;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* font-family: "Roboto", sans-serif; */
 }
 
 .Pricing_body tr td:first-child {
@@ -53,11 +30,7 @@ p::first-letter {
 }
 
 
-/* 
-border-color: white;
-border-style: double; check if works single line -- doulble lile =====
-border-width: 1px;
-*/
+
 a:hover {
   color: #008000;
 }
@@ -76,9 +49,13 @@ ul > li {
 
 .News_article img {
   width: 200px;
-  height: 95px;
+  height: 110px;
   float: right;
   margin-top: -60px;
+}
+
+.News_article h5 {
+  letter-spacing: 3px;
 }
 
 
@@ -89,12 +66,13 @@ ul > li {
 }
 
 .News_article {
-  line-height: 10px;
   background-image: url(/img/background11.jpg);
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .News_article h2 {
@@ -102,10 +80,7 @@ ul > li {
   font-size: 25px;
 }
 
-.News_article {
-  display: block;
-  margin: 0 auto;
-}
+
 
 
 .clearfix1 p,
@@ -115,8 +90,7 @@ ul > li {
   border-radius: 5px;
 }
 
-a:visited {
-}
+
 
 #Hamburgertoggle,
 #Hamburgerlabel {
@@ -232,7 +206,9 @@ h1 {
   max-width: 1000px;
 }
 
-
+.Homepage_body p {
+  text-indent: 20px;
+}
 
 h2 {
   text-align: center;
@@ -348,6 +324,7 @@ h2 {
   }
 
   .Boxer_body p {
+    line-height: 30px;
     font-size: 15px;
     max-width: 900px;
     margin: 0 auto;
@@ -931,11 +908,6 @@ h2 {
     display: none;
   }
 
-  .Pricing_body p {
-    /* text-transform: uppercase; somewhere else */
-    /* line-height, text-indent, letter-spacing or in body */
-    word-spacing: 1em;
-  }
 
   .cookieStatement {
     color: rgb(245, 77, 77);
