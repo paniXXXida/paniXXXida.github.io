@@ -267,6 +267,7 @@ h2 {
 .Product_article5,
 .Product_article6 {
   border: 2px solid #ffff00;
+  border-style: double;
 }
 
 /*PC*/
