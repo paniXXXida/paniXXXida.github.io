@@ -328,7 +328,7 @@ h2 {
     position: absolute;
     border-width: 10px;
     top: 400px;
-    border: 2px solid black;
+    border: solid black;
     width: 250px;
     display: grid;
     float: left;
