@@ -326,6 +326,7 @@ h2 {
     flex-grow: 0;
     flex-shrink: 0;
     position: absolute;
+    border-width: 10px;
     top: 400px;
     border: 2px solid black;
     width: 250px;
@@ -340,7 +341,7 @@ h2 {
     margin: 0 auto;
     display: grid;
     flex-direction: column;
-    border: 2px solid black;
+    border: solid black;
     border-style: double;
   }
 
