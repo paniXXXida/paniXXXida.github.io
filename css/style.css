@@ -285,7 +285,7 @@ h2 {
 }
 
 /*PC*/
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 769px) {
   .Product_aside {
     margin-bottom: 100px;
     display: grid;
@@ -438,7 +438,7 @@ h2 {
 }
 
 /*Tablet*/
-@media only screen and (min-width: 481px) and (max-width: 1279px) {
+/* @media only screen and (min-width: 481px) and (max-width: 1279px) {
   .Homepage_aside {
     width: 100%;
     max-width: 600px;
@@ -652,10 +652,10 @@ h2 {
 .Contact_figure2 img,
 .Contact_figure3 img {
   width: 100%;
-}
+} */
 
 /*Mobile*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .Hamburgernavigation {
     display: block;
   }
